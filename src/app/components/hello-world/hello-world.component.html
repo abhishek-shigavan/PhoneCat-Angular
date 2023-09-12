@@ -9,3 +9,17 @@
     </div>
     <span [style.display] = "display">{{ name }}</span>
 </div>
+<div class="directive-cnt">
+    <div *ngIf="canEdit; else noEdit">
+        <p>You can edit the following paragraph.</p>
+    </div>
+    
+    <ng-template #noEdit>
+        <p>The following paragraph is read only. Try clicking the button!</p>
+    </ng-template>
+    
+    <p [contentEditable]="canEdit">{{ editMessage }}</p>
+    <button type="button" (click)="onEditClick()">{{canEdit ? "Make text readable" : "Make text editable"}}</button>
+</div>
+
+
