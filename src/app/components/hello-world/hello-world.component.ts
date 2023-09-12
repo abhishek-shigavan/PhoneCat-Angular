@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HelloWorldComponent {
   message = "passing message from component"
+
+  handleClick() {
+    console.log("Clicked")
+  }
+
+  spanId = "demoSpan"
+  spanColor = "#687869"
 }
