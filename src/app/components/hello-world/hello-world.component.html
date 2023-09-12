@@ -3,4 +3,9 @@
     <span>{{ message }}</span>
     <button (click) = "handleClick()"> Click Me </button>
     <span [id] = "spanId" [style.color] = "spanColor">Demo property binding</span>
+    <div class="btn-cnt">
+        <button (click) = "handleToggleVisibility()">{{visibility ? "Hide" : "Show"}}</button>
+        <button (click) = "handlePrintName()">Print Name</button>
+    </div>
+    <span [style.display] = "display">{{ name }}</span>
 </div>
