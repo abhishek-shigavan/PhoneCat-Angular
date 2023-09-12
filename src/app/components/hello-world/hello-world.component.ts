@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HelloWorldComponent {
   message = "passing message from component"
+  editMessage = "I'm read only!"
   visibility = true
   handleClick() {
     console.log("Clicked")
@@ -32,6 +33,17 @@ export class HelloWorldComponent {
     if(!this.visibility) {
       this.visibility = true
       this.display = "block"
+    }
+  }
+
+  canEdit = false;
+ 
+  onEditClick() {
+    this.canEdit = !this.canEdit;
+    if (this.canEdit) {
+      this.editMessage = 'You can edit me!';
+    } else {
+      this.editMessage = "I'm read only!";
     }
   }
 }
