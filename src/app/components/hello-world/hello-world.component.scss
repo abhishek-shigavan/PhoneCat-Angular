@@ -18,3 +18,11 @@ button {
 div > button {
     margin-left: 20px;
 }
+.directive-cnt {
+    width: 60%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
