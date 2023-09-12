@@ -1,6 +1,6 @@
 .hello-container {
     width: 60%;
-    height: 200px;
+    height: 350px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -9,4 +9,12 @@
 }
 button {
     padding: 12px 8px;
+}
+.btn-cnt {
+    width: 100%;
+    display: flex;    
+    justify-content: center;
+}
+div > button {
+    margin-left: 20px;
 }
